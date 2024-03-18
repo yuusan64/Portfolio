@@ -1,0 +1,273 @@
+/* body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; 
+}
+
+.header-background{
+   background-color: lightblue;
+   clip-path: polygon(0 0, 100% 0%, 100% 50%, 0 100%);
+   height: 50%;
+   width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -1;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px; 
+    background-color: #333;
+    text-align: center;
+    overflow: hidden;
+}
+
+.navbar a{
+    
+    color: white;
+    padding: 20px 10px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+#my-skills{
+    
+}
+
+i{
+    font-size: 2.25rem;
+}
+
+section {
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section:not(:target) {
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out;
+}
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.profile-photo{
+    height: 18em;
+}
+
+.about-card{
+    background-color: #ffbbbb;
+    height: 12em;
+    width: 25em;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#my-work {
+   
+}
+
+#my-work .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    
+    margin: 10px;
+    width: 30%; 
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact {
+    background-color: lightblue;
+    height: 12vh;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+
+#contact a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: darkblue;
+    border-radius: 5px;
+}
+
+h2,h3{
+    margin: 0.2em;
+    text-align: center;
+}
+
+h3{
+    font-weight: lighter;
+} */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.header-background {
+    background-color: lightblue;
+    clip-path: polygon(0 0, 100% 0%, 100% 50%, 0 100%);
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: #333;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.navbar a {
+    color: white;
+    padding: 20px 10px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#my-skills{
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    gap: 4rem 1rem;
+    max-width: 60rem;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+
+#skills{
+
+    padding: 5em;
+}
+
+i{
+    font-size: 3.25rem;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.about-card {
+    background-color: #ffbbbb;
+    height: 14em;
+    width: 25em;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+    height: 24em;
+}
+
+#my-work .projects {
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    gap: 2rem 1rem;
+    align-items: center;
+    justify-content: center;
+    max-width: 75rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
+.project-card {
+    width: 24rem;
+    height: 24rem;
+    max-width: 90svw;
+    overflow-y: clip;
+    box-sizing: border-box;
+    padding-top: 0.125rem;
+    margin: 0 auto 0.875rem auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img{
+    width: 24rem;
+    height: 12rem;
+}
+
+#contact {
+    background-color: lightblue;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    position: absolute;
+    width: 100%;
+}
+
+#contact a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: darkblue;
+    border-radius: 5px;
+}
+
+h1,h2{
+    margin: 0.2em;
+    text-align: center;
+}
+
+h3{
+    font-weight: lighter;
+}
+
+h1{
+   padding: 3.75rem;
+   font-size: 2em;
+}
+
+h1 i{
+    font-size: 2.25rem;
+}
